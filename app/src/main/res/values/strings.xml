@@ -20,4 +20,17 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="title_activity_add_customer">AddCustomer</string>
+    <string name="title_activity_purchase_entry">PurchaseEntry</string>
+    <string name="title_activity_sell">Sell</string>
+    <string name="title_activity_product_list">ProductList</string>
+    <string name="title_activity_stocks_on_hand">StocksOnHand</string>
+    <string name="title_activity_vendor_detail">VendorDetail</string>
+    <string name="title_activity_purchase_order">PurchaseOrder</string>
+    <string name="title_activity_sales_order">SalesOrder</string>
+    <string name="title_activity_expenses_list">ExpensesList</string>
+    <string name="title_activity_profit_loss">ProfitLoss</string>
+    <string name="title_activity_calculator">Calculator</string>
+    <string name="title_activity_back_up">BackUp</string>
+    <string name="product_name">Product Name</string>
+    <string name="title_activity_purchase__entry">Purchase_Entry</string>
 </resources>

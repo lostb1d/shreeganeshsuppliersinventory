@@ -9,12 +9,14 @@
     <ScrollView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
         <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:orientation="vertical">
+
             <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent">
@@ -22,170 +24,95 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:orientation="vertical"
+                    android:background="@drawable/bg"
                     android:gravity="center"
-                    android:background="@drawable/bg">
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="70dp"
                         android:layout_height="70dp"
-                        android:src="@drawable/ganesha"
-                        android:layout_gravity="center" />
+                        android:layout_gravity="center"
+                        android:src="@drawable/ganesha" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
                         android:text="Shree Ganesh Suppliers, Ghorahi Dang"
                         android:textColor="#ffffff"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"
                         android:textSize="18sp"
-                        android:layout_marginTop="10dp"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:id="@+id/dateTimeDisplay"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
                         android:text="Date"
                         android:textColor="#ffffff"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"
                         android:textSize="14sp"
-                        android:layout_marginTop="10dp"/>
+                        android:textStyle="bold" />
+
                     <TextView
                         android:id="@+id/todays_sales"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
                         android:text="Today's Sales"
                         android:textColor="#ffffff"
-                        android:layout_gravity="center"
-                        android:textStyle="bold"
                         android:textSize="14sp"
-                        android:layout_marginTop="10dp"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:layout_marginTop="215dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="215dp"
                     android:layout_marginRight="10dp"
-                    >
+                    android:orientation="vertical">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginRight="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/imageView1"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/ic_plus_foreground"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/imageView1"
-                                    />
+                                    android:src="@drawable/ic_plus_foreground" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Purchase Entry"
-                                    android:textSize="16sp"
                                     android:layout_below="@+id/imageView1"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Purchase Entry"
+                                    android:textSize="16sp" />
+
                                 <Button
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
                                     android:id="@+id/buttonPurchaseEntry"
-                                    android:background="@android:color/transparent"/>
-
-                            </RelativeLayout>
-
-                        </androidx.cardview.widget.CardView>
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_gravity="center"
-                            android:orientation="vertical"
-                            android:layout_marginLeft="5dp"
-                            >
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-                                <ImageView
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
-                                    android:src="@drawable/sell"
-                                    android:layout_centerInParent="true"
-                                    android:id="@+id/sell"
-                                    />
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Sell"
-                                    android:textSize="16sp"
-                                    android:layout_below="@+id/sell"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
-                                <Button
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:id="@+id/buttonSell"
-                                    android:background="@android:color/transparent"/>
-
-                            </RelativeLayout>
-
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="135dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:layout_gravity="center"
-                            android:orientation="vertical"
-                            android:layout_marginRight="5dp"
-                            >
-                            <RelativeLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent">
-                                <ImageView
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
-                                    android:src="@drawable/product"
-                                    android:layout_centerInParent="true"
-                                    android:id="@+id/item"
-                                    />
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:text="Product List"
-                                    android:textSize="16sp"
-                                    android:layout_below="@+id/item"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
-
-                                <Button
-                                    android:id="@+id/buttonAddItem"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
                                     android:background="@android:color/transparent" />
@@ -193,358 +120,480 @@
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginLeft="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/sell"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/stocks"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/transaction"
-                                    />
+                                    android:src="@drawable/sell" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Stocks on Hand"
-                                    android:textSize="16sp"
+                                    android:layout_below="@+id/sell"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Sell"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/buttonSell"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="135dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/item"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/product" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/item"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Product List"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/buttonProductList"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@android:color/transparent" />
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/transaction"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/stocks" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
                                     android:layout_below="@+id/transaction"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Stocks on Hand"
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonStocksOnHand"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonTransaction"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginRight="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/viewItem"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/vendor"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/viewItem"
-                                    />
+                                    android:src="@drawable/vendor" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Vendor Detail"
-                                    android:textSize="16sp"
                                     android:layout_below="@+id/viewItem"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Vendor Detail"
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonVendorDetail"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonViewItem"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginLeft="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/order"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/customer"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/order"
-                                    />
+                                    android:src="@drawable/customer" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Customer Details"
-                                    android:textSize="16sp"
                                     android:layout_below="@+id/order"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Customer Details"
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonCustomerDetails"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonOrder"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginRight="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/purchaseOrder"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
                                     android:src="@drawable/purchase_order"
-                                    android:layout_centerInParent="true"
-                                    android:id="@+id/calculator"
+
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_below="@+id/purchaseOrder"
+
+                                    android:layout_marginBottom="10dp"
                                     android:text="Purchase Order"
-                                    android:textSize="16sp"
-                                    android:layout_below="@+id/calculator"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonPurchaseOrder"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonCalculator"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginLeft="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/saleOrder"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
                                     android:src="@drawable/sale_order"
-                                    android:layout_centerInParent="true"
-                                    android:id="@+id/backup"
+
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_below="@id/saleOrder"
+                                    android:layout_marginBottom="10dp"
                                     android:text="Sale Order"
-                                    android:textSize="16sp"
-                                    android:layout_below="@+id/backup"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonSalesOrder"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonBackUp"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginRight="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/expenseList"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
+                                    android:layout_centerInParent="true"
                                     android:src="@drawable/expense_list"
-                                    android:layout_centerInParent="true"
-                                    android:id="@+id/calculator"
+
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Expenses List"
-                                    android:textSize="16sp"
-                                    android:layout_below="@+id/calculator"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                        android:layout_below="@+id/expenseList"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Expenses List"
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonExpenseList"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonCalculator"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginLeft="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/profits"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/profits"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/backup"
+                                    android:src="@drawable/profits"
+
                                     />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Profit / Loss"
-                                    android:textSize="16sp"
-                                    android:layout_below="@+id/backup"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+android:layout_below="@id/profits"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Profit / Loss"
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonProfitLoss"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonBackUp"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="135dp"
-                        android:orientation="horizontal"
-                        android:layout_marginBottom="10dp">
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginRight="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/calculator"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/calculator"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/calculator"
-                                    />
+                                    android:src="@drawable/calculator" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Calculator"
-                                    android:textSize="16sp"
                                     android:layout_below="@+id/calculator"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Calculator"
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonCalculator"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonCalculator"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 
                         </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:orientation="vertical"
                             android:layout_marginLeft="5dp"
-                            >
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
                             <RelativeLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent">
+
                                 <ImageView
+                                    android:id="@+id/backup"
                                     android:layout_width="50dp"
                                     android:layout_height="50dp"
-                                    android:src="@drawable/backup"
                                     android:layout_centerInParent="true"
-                                    android:id="@+id/backup"
-                                    />
+                                    android:src="@drawable/backup" />
+
                                 <TextView
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
-                                    android:text="Backup"
-                                    android:textSize="16sp"
                                     android:layout_below="@+id/backup"
                                     android:layout_centerHorizontal="true"
                                     android:layout_marginTop="10dp"
-                                    android:layout_marginBottom="10dp" />
+                                    android:layout_marginBottom="10dp"
+                                    android:text="Backup"
+                                    android:textSize="16sp" />
+
                                 <Button
+                                    android:id="@+id/buttonBackUp"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:id="@+id/buttonBackUp"
-                                    android:background="@android:color/transparent"/>
+                                    android:background="@android:color/transparent" />
 
                             </RelativeLayout>
 

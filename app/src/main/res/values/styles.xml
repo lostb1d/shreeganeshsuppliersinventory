@@ -25,4 +25,7 @@
 
     <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="FormText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#a83232</item>
+    </style>
 </resources>
